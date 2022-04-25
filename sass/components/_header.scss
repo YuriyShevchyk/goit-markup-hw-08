@@ -1,0 +1,98 @@
+.header {
+    display: flex;
+    height: 80px;
+    border-bottom: 1px solid #ececec;
+  }
+  
+  .header .container {
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+  
+    width: 1200px;
+  
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .nav__list {
+    display: flex;
+  }
+  .nav__item {
+    margin-right: 50px;
+  }
+  .nav__item:last-child {
+    margin-right: 0;
+  }
+  .header__list {
+    display: flex;
+    margin-left: auto;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .header__item {
+    margin-right: 50px;
+  }
+  .header__item:last-child {
+    margin-right: 0;
+  }
+  .nav__link {
+    position: relative;
+    padding-bottom: 32px;
+    padding-top: 32px;
+  
+    color: var(--sec-text-color-);
+    font-weight: 500;
+  
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .nav__item .current {
+    color: var(--brend-color-);
+  }
+  
+  .nav__link:focus,
+  .nav__link:hover {
+    color: var(--brend-color-);
+    }
+
+    .header__link {
+        display: flex;
+        align-items: center;
+        
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        color: var(--main-text-color-);
+        text-decoration: none;
+      
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      
+      .header__link:hover,
+      .header__link:focus {
+        color: var(--brend-color-);
+          }
+      
+      .header__list-icon {
+        fill:var(--main-text-color-);
+        margin-right: 10px;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      
+      .header__link:hover .header__list-icon, .header__link:focus .header__list-icon {
+        fill:var(--brend-color-);
+      }
+      .current::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      
+        display: block;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background-color: var(--brend-color-);
+      
+      }
