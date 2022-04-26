@@ -6,16 +6,18 @@
     display: flex;
     padding: 0;
     justify-content: space-between;
+
+    &-item {
+      margin-right: 30px;
+      width: 370px;
+      height: 294px;
+    }
+      &:last-child {
+      margin-right: 0;
+    }
   }
   
-  &-item {
-    margin-right: 30px;
-    width: 370px;
-    height: 294px;
-  }
-    &:last-child {
-    margin-right: 0;
-  }
+  
   
   .work-thumb {
     position: relative;

@@ -6,11 +6,12 @@
     width: 170px;
     height: 92px;
     margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
   
-  &:last-child {
-    margin-right: 0;
-  }
   
   .client-link {
     display: flex;
@@ -26,11 +27,13 @@
     color: #AFB1B8;
   
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover, &:focus {
+      border-color: var(--brend-color-);
+    }
   }
-  &:hover, &:focus {
-    border-color: var(--brend-color-);
-  }
-  &:hover > .client-icon, &:focus > .client-icon {
+  
+  .client-link:hover > .client-icon, .client-link:focus > .client-icon {
       fill:var(--brend-color-);
   }
   

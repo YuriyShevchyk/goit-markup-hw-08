@@ -27,10 +27,12 @@
   
   .address-list-item {
     margin-bottom: 9px;
-  }
+
     &:last-child {
-    margin-bottom: 0;
+      margin-bottom: 0;
+    }
   }
+    
   
   .footer-adress {
     font-style: normal;
@@ -163,13 +165,15 @@
     background-color: transparent;
     border-color: rgba(255, 255, 255, 0.3);
     border-width: 1px;
-  
-  }
+
     &::placeholder {
-    font-family: Roboto;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0,03;
-    color:rgba(255, 255, 255, 0.6);
+      font-family: Roboto;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0,03;
+      color:rgba(255, 255, 255, 0.6);
+    
+    }
   
   }
+    
