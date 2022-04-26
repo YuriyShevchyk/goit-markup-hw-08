@@ -20,23 +20,13 @@
     opacity: 1;
 }
 
-.header__list {
-    display: none;
-}
+// .header__list {
+//     display: none;
+// }
 
-.nav__list {
-    display: none;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-li {
-    list-style: none;
-    padding-left: 0;
-}
+// .nav__list {
+//     display: none;
+// }
 
 .mobile-menu {
     position: fixed;
@@ -93,7 +83,7 @@ color: #757575;
 
 .menu-socials {
     display: flex;
-    
+
 }
 .menu-socials-item {
 font-family: 'Roboto';

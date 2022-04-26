@@ -17,8 +17,18 @@
   }
   
   .nav__list {
-    display: flex;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      margin-left: auto;
+      justify-content: flex-end;
+      align-items: center;
+      
+    }
+    
   }
+
   .nav__item {
     margin-right: 50px;
   }
@@ -26,11 +36,18 @@
     margin-right: 0;
   }
   .header__list {
-    display: flex;
-    margin-left: auto;
-    justify-content: flex-end;
-    align-items: center;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      margin-left: auto;
+      justify-content: flex-end;
+      align-items: center;
+      
+    }
+   
   }
+
   .header__item {
     margin-right: 50px;
   }
@@ -96,3 +113,4 @@
         background-color: var(--brend-color-);
       
       }
+
