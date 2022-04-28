@@ -1,54 +1,63 @@
 /* TEAM */
 .team {
-    padding-bottom: 94px;
+    padding-bottom: 60px;
     background-color: var(--sec-bg-color-);
+
+    @media screen and(min-width:1200px) {
+      padding-bottom: 94px;
+    }
   }
-  .team-title .team-text {
+  .team__title .team__text {
     text-align: center;
     font-size: 16px;
     line-height: 1.19;
   }
   
-  .team-title {
-    color: var(--sec-text-color-);
-    font-weight: 700;
-  }
-  .team-list {
-    display: flex;
-    justify-content: space-between;
+  .team__list {
+    display: block;
+    // justify-content: space-between;
     padding: 0;
+
+    @media screen and(min-width:1200px) {
+      display: flex;
+      justify-content: space-between;
+    }
   }
-  .team-list-item {
-    width: 270px;
+  .team__item {
+    width: 450px;
     background-color: var(--white-color);
     text-align: center;
   
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+
+    @media screen and(min-width:1200px) {
+      width: 270px;
   }
-  .team-title {
+  .team__title {
     margin-bottom: 10px;
   
     font-weight: 500;
     font-size: 16px;
+    color: var(--sec-text-color-);
   }
   
-  .team-text {
+  .team__text {
     margin-bottom: 16px;
   }
   
-  .team-soc-list {
+  .team__soc-list {
     display: flex;
     justify-content: center;
   }
   
-  .team-thumb {
+  .team__thumb {
     padding-top: 30px;
     padding-bottom: 30px;
   }
   
-  .t-soc-item {
+  .team__soc-item {
       margin-right: 10px;
       width: 44px;
       height: 44px;
@@ -60,7 +69,7 @@
     
   }
   
-  .t-soc-icons {
+  .team__soc-icons {
     width: 20px;
     height: 20px;
   
@@ -68,7 +77,7 @@
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  .t-soc-link {
+  .team__soc-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,7 +95,7 @@
     }
   }
   
-  .t-soc-link:hover > .t-soc-icons, .t-soc-link:focus > .t-soc-icons {
+  .team__soc-link:hover > .team__soc-icons, .team__soc-link:focus > .team__soc-icons {
     fill:var(--white-color);
   }
-  
+}
