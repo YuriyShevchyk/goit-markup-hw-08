@@ -1,4 +1,4 @@
-.filter-buttons {
+.filter__buttons {
     background-color: var(--sec-bg-color-);
     color: var(--sec-text-color-);
     cursor: pointer;
@@ -26,16 +26,33 @@
    
   .filter {
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+   
+    margin-bottom: 40px;
+
+    @media screen and(min-width:768px) {
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    @media screen and(min-width:1200px) {
+      margin-bottom: 50px;
+    }
   }
   
-  .filter-item {
+  .filter__item {
     margin-right: 8px;
+    margin-bottom: 15px;
 
     &:last-child {
       margin-right: 0;
+      margin-bottom: 0;
+      
+    }
+    &:nth-child(3n+1) {
+      margin-bottom: 0;
+
     }
   }
-    
+
   
