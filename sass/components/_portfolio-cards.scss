@@ -5,6 +5,12 @@
     display: block;
     padding: 0;
 
+    @media screen and(max-width:479px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }  
+
     @media screen and(min-width:768px) {
       display: flex;
       flex-wrap: wrap;
@@ -17,6 +23,10 @@
   .card__item {
     margin-bottom: 30px;
     
+    @media screen and(max-width:479px) {
+      max-width:350px;
+      margin-right: 0;
+    }
    
     @media screen and(min-width:768px) and(max-width:1199px) {
       margin-right: 30px;
