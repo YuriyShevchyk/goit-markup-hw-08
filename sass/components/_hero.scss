@@ -19,7 +19,7 @@
   // (min-resolution: 2dppx);
 
   background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../../img/hero-bgi/hero-sm.jpg);
+    url(./img/hero-bgi/hero-sm.jpg);
 
     @include mq(retina) {
       background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
