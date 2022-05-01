@@ -89,6 +89,17 @@
 
 }
 
+ .menu-nav-link-current{
+    font-family: 'Roboto';
+ font-style: normal;
+ font-weight: 500;
+ font-size: 40px;
+ line-height: 47px;
+ letter-spacing: 0.02em;
+    color: var(--brend-color-);
+
+}
+
  .mobile-menu-group {
     margin-top: auto;
  }
